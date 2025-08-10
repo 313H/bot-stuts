@@ -1,8 +1,8 @@
 const fs = require('fs');
 const { Client, GatewayIntentBits, WebhookClient, Partials } = require('discord.js');
 
-const TOKEN = process.env.TOKEN;       // توكن البوت (تحطه في Render)
-const WEBHOOK_URL = process.env.WEBHOOK; 
+const TOKEN = process.env.TOKEN; MTQwNDA1MTM3NDkyODMwMjIwMw.GcEHau.MhXEWFrfu6yVu3FzKMqYHlYMRgQUy4B_TxPnvI       // توكن البوت (تحطه في Render)
+const WEBHOOK_URL = process.env.WEBHOOK; https://canary.discord.com/api/webhooks/1404154553506594937/kzcbzGcM8osHFvU7v9ayod-sY9V_K5PGVQWi8N6HcilFJD-0jfjeDumn9GVv5f2xau4Y 
 const START_ID = 1000;                 
 
 if (!TOKEN || !WEBHOOK_URL) {
@@ -84,4 +84,5 @@ client.on('guildMemberAdd', async (member) => {
 });
 
 client.login(TOKEN);
+
 
