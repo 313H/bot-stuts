@@ -1,10 +1,8 @@
 const fs = require('fs');
 const { Client, GatewayIntentBits, WebhookClient, Partials } = require('discord.js');
 
-const TOKEN = process.env.TOKEN;       // توكن البوت (تحطه في Render)
-const WEBHOOK_URL = process.env.WEBHOOK;
-const START_ID = 1000;                 
-
+const TOKEN = process.env.TOKEN;        // توكن البوت (تحطه في Render)
+const WEBHOOK_URL = process.env.WEBHOOK; 
 if (!TOKEN || !WEBHOOK_URL) {
     console.error("❌ لازم تضيف TOKEN و WEBHOOK في متغيرات البيئة.");
     process.exit(1);
@@ -84,6 +82,7 @@ client.on('guildMemberAdd', async (member) => {
 });
 
 client.login(TOKEN);
+
 
 
 
